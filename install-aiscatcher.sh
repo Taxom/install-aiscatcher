@@ -110,7 +110,7 @@ echo -e "\e[36mcode exists \e[39m"
 
 else
 echo -e "\e[36mCloning source-code of AIS-catcher from Github \e[39m"
-git clone https://github.com/jvde-github/AIS-catcher.git
+git clone https://github.com/jvde-github/AIS-catcher.git -b listener
 fi
 
 echo -e "\e[36mUpdating code \e[39m"
