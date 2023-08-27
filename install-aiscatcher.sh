@@ -110,14 +110,14 @@ echo -e "\e[36mcode exists \e[39m"
 
 else
 echo -e "\e[36mCloning source-code of AIS-catcher from Github \e[39m"
-git clone https://github.com/jvde-github/AIS-catcher.git -b listener
+git clone -b listener https://github.com/jvde-github/AIS-catcher.git
 fi
 
 echo -e "\e[36mUpdating code \e[39m"
 cd AIS-catcher
 git config --global --add safe.directory ${INSTALL_FOLDER}/AIS-catcher
 git fetch --all
-git reset --hard origin/main
+git reset --hard origin/listener
 
 if [[ -d build ]];
 then
